@@ -1,0 +1,162 @@
+
+.navParent {
+    background-color: #6B6E71;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home, .about, .myWork {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navParent a {
+    color: #DCD5CB;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #232834;
+}
+
+.skillsParent {
+    display: flex;
+    flex-direction: row;
+}
+
+.skillName {
+    background-color: #DCD5CB;
+    color: #444;
+    cursor: pointer;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .skillName:hover {
+    background-color: #ccc;
+  }
+
+  .skillList {
+    padding: 0 18px;
+    background-color: #232834;
+    display: none;
+    overflow: hidden;
+  }
+
+  .skillName:after {
+    content: '\02795'; 
+    font-size: 20px;
+    color: #000;
+    float: right;
+    margin-left: 0px;
+  }
+  
+  .active:after {
+    content: "\2796"; 
+  }
+
+.skill1, .skill2, .skill3 {
+    width: 33%;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 1%;
+    padding: 1%;
+    color: #DCD5CB;
+    text-align: center;
+    font-size: 24px;
+}
+
+.titleSkills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DCD5CB;
+    margin: 1%;
+    font-size: 24px;
+}
+
+.titleMyWork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DCD5CB;
+    margin: 1%;
+    font-size: 24px;
+}
+
+.examples {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-area: 
+    "examplesText1 examplesText2 examplesText3"
+    ;
+    margin: 1%;
+    padding: 1%;
+    color: #DCD5CB;
+    text-align: center;
+}
+
+.examplesText1 {
+    display: grid;
+    margin: 1%;
+    padding: 5%;
+    border: 1px solid black;
+}
+
+.examplesText2 {
+    display: grid;
+    margin: 1%;
+    padding: 5%;
+    border: 1px solid black;
+}
+
+.examplesText3 {
+    display: grid;
+    margin: 1%;
+    padding: 5%;
+    border: 1px solid black;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+}
+
+.viewAllProjects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #DCD5CB;
+}
+
+@media only screen and (max-width: 600) {
+
+    .skillsParent {
+        width: 100%;
+    }
+
+    .examples {
+        margin: 0px 5%;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-area: 
+        "examplesText1"
+        "examplesText2"
+        "examplesText3"
+        ;
+    }
+
+}
